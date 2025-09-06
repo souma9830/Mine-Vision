@@ -1,0 +1,15 @@
+{
+  "heroSection": {
+    "headline": "🌍 AI Anemia Detection",
+    "subheadline": "Fast, affordable, and camera-based anemia screening.",
+    "keyPoints": [
+      "✅ Check eyes, lips & nails",
+      "✅ Fingertip video Hb estimate",
+      "✅ Instant AI-powered report"
+    ],
+    "ctaButtons": [
+      { "text": "Watch Demo" },
+      { "text": "Dashboard"}
+    ]
+  }
+}

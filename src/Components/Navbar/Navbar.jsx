@@ -8,7 +8,7 @@ function Navbar(){
     return(
         <>
             <nav 
-                className="absolute left-1/2 top-4 -translate-x-1/2 w-[86%] h-[13vh] 
+                className="fixed left-1/2 top-4 -translate-x-1/2 w-[86%] h-[13vh] 
                 rounded-[2.5rem] 
                 bg-white/20 
                 backdrop-blur-xl 
