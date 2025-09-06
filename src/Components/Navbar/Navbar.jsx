@@ -8,7 +8,7 @@ function Navbar(){
     return(
         <>
             <nav 
-                className="fixed left-1/2 top-4 -translate-x-1/2 w-[86%] h-[13vh] 
+                className="fixed left-1/2 top-4 -translate-x-1/2 w-[86%] h-[13vh] z-40
                 rounded-[2.5rem] 
                 bg-white/20 
                 backdrop-blur-xl 
@@ -36,7 +36,7 @@ function Navbar(){
                 <ul className={`absolute top-[14vh] transition-all ease duration-[0.5s] right-0 ${isOpen?"w-[15rem] opacity-100":"w-0 opacity-0"}  bg-white/20 
                 backdrop-blur-xl 
                 border border-white/40 
-                shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] rounded-2xl h-[80vh] flex flex-col gap-5 items-center `}>
+                shadow-[0_8px_32px_0_rgba(0,0,0,0.1)] z-40 rounded-2xl h-[80vh] flex flex-col gap-5 items-center `}>
                     <li className='mt-5 transition-all cursor-pointer hover:text-blue-400 ease'>Home</li>
                     <li className='transition-all cursor-pointer hover:text-blue-400 ease'>About</li>
                     <li className='transition-all cursor-pointer hover:text-blue-400 ease'>Conatct</li>
