@@ -2,7 +2,8 @@ import Card from "./Card";
 function About() {
 
   return (
-    <section className="w-full py-16 bg-[#FFFFFF]">
+    <section className="w-full py-16 bg-[EBE1E1] flex justify-center">
+      <div className="w-[90vw] h-[100vh] bg-slate-200 border-30rem">
       <div className="max-w-6xl px-6 mx-auto lg:px-8">
         
         <Card />
@@ -14,6 +15,7 @@ function About() {
             Learn more about our approach
           </button>
         </div>
+      </div>
       </div>
     </section>
   );

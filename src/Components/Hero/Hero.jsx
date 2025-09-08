@@ -51,27 +51,23 @@ function Hero() {
   return (
     <>
       <main className="w-full h-full mt-[24vh] flex flex-col items-center px-2 gap-[2rem] text-center">
-        <div className="w-full max-w-6xl rounded-3xl bg-[#DAEBA7] p-8 md:p-12 flex flex-col items-center gap-8">
-          <h1 className="mt-8 text-4xl font-bold sm:text-6xl md:text-8xl">Mine Vision.<span className="text-green-400">AI</span></h1>
-          <h2 className="text-2xl font-semibold tracking-wide text-gray-700 sm:text-3xl">-Predictive Intelligence For Safe Mines</h2>
-          <h2 className="text-3xl italic font-semibold">AI-Powered Rockfall Prediction System For Open Pit Mines <br /> Helping You Prevent Risks Before They Become Disasters </h2>
+     <div className="w-full max-w-6xl rounded-3xl bg-gradient-to-br from-[#DAEBA7] to-white p-8 md:p-12 flex flex-col items-center gap-8 shadow-xl border-30rem">    
+         <h1 className="mt-8 text-4xl font-bold sm:text-6xl md:text-8xl">Mine Vision.<span className="text-green-400">AI</span></h1>
+         <h2 className="text-2xl font-semibold tracking-wide text-gray-700 sm:text-3xl">-Predictive Intelligence For Safe Mines</h2>
+            <h2 className="text-3xl italic font-semibold">AI-Powered Rockfall Prediction System For Open Pit Mines <br /> Helping You Prevent Risks Before They Become Disasters </h2>
 
-          <div className="flex gap-5 mt-3">
-            <button className='flex items-center gap-2 px-6 py-2 font-semibold text-white transition-all bg-black rounded-2xl hover:bg-gray-700 ease group'>
-              Watch Demo
-            
-            </button>
-            <button className='flex items-center gap-2 px-6 py-2 font-semibold text-white transition-all bg-black border-2 hover:text-gray-300 rounded-2xl ease group'>
-              Dashboard
-            </button>
-          </div>
-        </div>
-        
-        
-        <div className="w-full max-w-6xl mt-8 mb-12">
-          <h3 className="mb-6 text-2xl font-bold text-gray-800">Advanced Monitoring Systems</h3>
-          
-          <div className="relative w-full h-64 overflow-hidden rounded-xl bg-[#DAEBA7] border-4 border-white shadow-lg">
+    <div className="flex gap-5 mt-3">
+        <button className='flex items-center gap-2 px-6 py-2 font-semibold text-white transition-all bg-black rounded-2xl hover:bg-gray-700 ease group'>
+        Watch Demo
+        </button>
+        <button className='flex items-center gap-2 px-6 py-2 font-semibold text-white transition-all bg-black border-2 hover:text-gray-300 rounded-2xl ease group'>
+        Dashboard
+        </button>
+    </div>
+    </div>
+        <div className="w-full max-w-6xl mt-8 mb-12 h-100">
+          <h3 className="mb-6 text-2xl font-bold text-gray-800">Advanced Monitoring Systems</h3> 
+          <div className="relative w-full h-[70vh] overflow-hidden rounded-xl bg-gradient-to-br from-[#DAEBA7] to-white border-4 border-white shadow-lg">
             {images.map((image, index) => (
               <div
                 key={index}
@@ -82,12 +78,10 @@ function Hero() {
                 <img
                   src={image}
                   alt={`Mine monitoring system ${index + 1}`}
-                  className="object-cover max-w-full max-h-full"
+                   className="w-full h-full bg-center bg-cover"
                 />
               </div>
             ))}
-            
-          
             <button 
               className="absolute p-2 text-white transition-all transform -translate-y-1/2 bg-black bg-opacity-50 rounded-full left-2 top-1/2 hover:bg-opacity-75"
               onClick={prevImage}
@@ -99,9 +93,7 @@ function Hero() {
               onClick={nextImage}
             >
               ›
-            </button>
-            
-           
+            </button>         
             <div className="absolute left-0 right-0 flex justify-center space-x-2 bottom-4">
               {images.map((_, index) => (
                 <button
@@ -118,7 +110,7 @@ function Hero() {
           <p className="mt-4 text-gray-600">Advanced AI systems monitoring mine stability in real-time</p>
         </div>
          {showNewsTicker && (
-          <div className="relative w-full max-w-6xl p-3 text-white bg-red-600 rounded-t-lg">
+          <div className="relative w-full max-w-6xl p-3 mt-0 text-white bg-red-600 rounded-t-lg mb-9">
             <div className="flex items-center justify-center">
               <span className="mr-2 font-bold">BREAKING:</span>
               <div className="h-6 overflow-hidden">

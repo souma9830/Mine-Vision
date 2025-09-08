@@ -1,16 +1,19 @@
 import { defaultData } from "./defaultData";
 function Card(){
-    const { heading, subheading, cards } =  defaultData;
+    const {subheading, cards } =  defaultData;
     return(
         <>
             <div className="mb-12 text-center">
-          <h2 className="text-4xl font-semibold tracking-wide text-gray-900 sm:text-6xl ">
-            {heading}
+               <button className="w-[9vw] h-[7vh] mt-4 rounded-full bg-white font-bold text-base ">
+              Features
+            </button>
+          <h2 className="flex-col mt-5 text-4xl font-semibold tracking-wide text-gray-900 sm:text-6xl">
+            Why Choose MineVision.<span className="text-emerald-400">AI</span>?
           </h2>
           <p className="max-w-3xl mx-auto mt-5 text-xl text-gray-500">{subheading}</p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-3">
+        <div className="grid justify-around gap-6 sm:grid-cols-1 lg:grid-cols-4">
           {cards.map((card) => (
             <article
               key={card.id}

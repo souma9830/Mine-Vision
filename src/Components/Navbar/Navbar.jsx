@@ -40,7 +40,7 @@ function Navbar(){
                     <li className='transition-all cursor-pointer hover:text-blue-400 ease'>About</li>
                     <li className='transition-all cursor-pointer hover:text-blue-400 ease'>Conatct</li>
                     <button onClick={()=>setIspoped(true)} className='flex items-center gap-2 px-6 py-2 font-semibold text-gray-900 transition-all bg-blue-400 rounded-2xl hover:bg-gray-700 ease group'>
-                        SignUp/SignIn 
+                        SignUp/Login
                         <span className='transition-transform duration-300 group-hover:translate-x-3'>
                             <FaArrowRight />
                         </span>

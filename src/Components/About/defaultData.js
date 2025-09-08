@@ -1,30 +1,38 @@
-import eye from '../../assets/eye.png'
-import nail from '../../assets/nail.png'
-import blood from '../../assets/blood.png'
+import terrain from '../../assets/eye.png'
+import vibration from '../../assets/nail.png'
+import weather from '../../assets/blood.png'
+import prediction from '../../assets/blood.png'
 export const defaultData = {
-  heading: "About Our Project",
-  subheading: "AI-powered non-invasive anemia screening using Eye, Nail, and Skin detection.",
-  cards: [
-    {
-      id: "eye",
-      title: "Conjunctiva (Eye) Analysis",
-      icon: eye,
-      description:
-        "AI examines the palpebral conjunctiva for pallor, reduced coloration, and vascular visibility to identify anemia signs."
-    },
-    {
-      id: "nail",
-      title: "Nail Bed Examination",
-      icon: nail,
-      description:
-        "The system detects nail bed pallor and structural changes such as koilonychia (spoon-shaped nails), both linked to anemia."
-    },
-    {
-      id: "skin",
-      title: "Skin & Lip Color Assessment",
-      icon: blood,
-      description:
-        "Advanced color analysis evaluates skin and lip pallor, providing key indicators of hemoglobin deficiency."
-    }
-  ]
+  subheading: "Predicting, Real Time, And Reliable-Your complete Mineing Safety partner .",
+cards: [
+  {
+    id: "terrain",
+    title: "Terrain & Slope Analysis",
+    icon: terrain,
+    description:
+      "AI models evaluate slope steepness, soil composition, and rock structure to detect unstable zones prone to rockfall."
+  },
+  {
+    id: "vibration",
+    title: "Seismic & Vibration Monitoring",
+    icon: vibration,
+    description:
+      "Sensors continuously track ground vibrations, minor tremors, and blasting activities that may trigger rockfall events."
+  },
+  {
+    id: "weather",
+    title: "Weather & Rainfall Impact",
+    icon: weather,
+    description:
+      "System analyzes rainfall intensity, freeze-thaw cycles, and temperature variations that weaken rock stability over time."
+  },
+  {
+    id: "prediction",
+    title: "Real-Time Risk Prediction",
+    icon: prediction,
+    description:
+      "AI-powered models combine terrain, vibration, and weather data to generate accurate early warnings for rockfall hazards."
+  }
+]
+
 };
