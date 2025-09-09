@@ -10,7 +10,7 @@ function Card(){
           <h2 className="flex-col mt-5 text-4xl font-semibold tracking-wide text-gray-900 sm:text-6xl">
             Why Choose MineVision.<span className="text-emerald-400">AI</span>?
           </h2>
-          <p className="max-w-3xl mx-auto mt-5 text-xl text-gray-500">{subheading}</p>
+          <p className="max-w-3xl mx-auto mt-5 text-xl italic text-gray-500">{subheading}</p>
         </div>
 
         <div className="grid justify-around gap-6 sm:grid-cols-1 lg:grid-cols-4">
@@ -19,7 +19,7 @@ function Card(){
               key={card.id}
               className="
                 relative p-6 transition cursor-pointer 
-                bg-gradient-to-br from-emerald-400/30 to-emerald-600/30 
+                bg-gradient-to-br from-white to-sky-300
                 border border-white/30 
                 rounded-2xl 
                 backdrop-blur-md 
@@ -30,9 +30,9 @@ function Card(){
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center w-14 h-14 ">
+                  {/* <div className="flex items-center justify-center w-14 h-14 ">
                     <img src={card.icon} alt="icon" className="w-full h-full rounded-[50%]" />
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="flex-1">

@@ -3,7 +3,7 @@ import vibration from '../../assets/nail.png'
 import weather from '../../assets/blood.png'
 import prediction from '../../assets/blood.png'
 export const defaultData = {
-  subheading: "Predicting, Real Time, And Reliable-Your complete Mineing Safety partner .",
+  subheading: "Predicting, Real Time, And Reliable-Your complete Mineing Safety partner.",
 cards: [
   {
     id: "terrain",
