@@ -1,22 +1,14 @@
-import Logo from '../../assets/anemia.png'
-function Footter(){
-    const date=new Date();
+function Footer(){
     return(
-        <>
-            <footer className="w-full px-8 py-10 bg-white/20 backdrop-blur-md border-t border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.1)] flex flex-col items-center sm:flex-row sm:justify-between rounded-t-2xl">
-  
-            <div className="mb-6 h-[15rem] w-[15rem] sm:mb-0">
-                <img src={Logo} alt="Logo" className="object-contain w-[10vw] h-[10vh] drop-shadow-md" />
+        <footer className="w-full px-4 py-4 bg-[#DAEBA7] flex justify-between items-center rounded-t-lg">
+            <div className="text-sm text-gray-700">
+                © {new Date().getFullYear()} Mine Vision AI
             </div>
-
-
-                <button className="px-6 py-2 mt-6 font-semibold text-white transition-all duration-300 shadow-md sm:mt-0 bg-gradient-to-r from-emerald-500 to-emerald-700 rounded-xl hover:shadow-lg hover:scale-105">
-                    Contact Us
-                </button>
-            </footer>
-
-        </>
+            <button className="px-4 py-1 text-sm font-semibold text-white transition-colors bg-black rounded-lg hover:bg-gray-800">
+                Contact
+            </button>
+        </footer>
     )
 }
 
-export default Footter;
+export default Footer;
