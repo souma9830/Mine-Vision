@@ -43,12 +43,10 @@ const Team = () => {
           Our Crew <span className="text-green-600">Our Strength</span>
         </h2>
 
-        {/* Subtext */}
         <p className="max-w-2xl mx-auto mb-12 text-gray-600">
           Get to know the team building the future of safety.
         </p>
 
-        {/* Team Members */}
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
           {team.map((member, index) => (
             <div
